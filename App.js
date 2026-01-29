@@ -13,6 +13,13 @@ export default function App() {
       </View>
 
       <View style={styles.descriptionContainer}>
+
+        <View style={styles.glitchContainer}>
+            <View style={[styles.pixel, { backgroundColor: '#FFD600' }]} />
+            <View style={[styles.pixel, { backgroundColor: '#FF6D00' }]} />
+            <View style={[styles.pixel, { backgroundColor: '#00838F' }]} />
+            <View style={[styles.pixel, { backgroundColor: '#F5F5F5' }]} />
+        </View>
         
         <Text style={styles.subtitle}>
             Descripción
@@ -83,10 +90,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     alignSelf: 'center',
     elevation: 20,
-
     borderWidth: 3,
     borderColor: '#FFD600',
-
     borderTopRightRadius: 30,
     borderBottomLeftRadius: 30,
     backgroundColor: '#121212'
@@ -104,9 +109,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(255,255,255, 0.09)',
     borderRadius: 30,
     marginBottom: 40
-  },
-  scrollContent: {
-    
   },
   descriptionText: {
     fontSize: 16,
@@ -142,5 +144,18 @@ const styles = StyleSheet.create({
     fontStyle: 'italic',
     lineHeight: 20,
     fontWeight: '600'
+  },
+  glitchContainer: {
+    position: 'absolute', //flotante, sin afectar otros elementos
+    top: 10,
+    right: 10,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    width: 40, //acomodar en cuadrado
+  },
+  pixel: {
+    width: 20,
+    height: 20,
+    opacity: 0.8
   }
 });
