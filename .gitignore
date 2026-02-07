@@ -1,0 +1,18 @@
+#Archivos de basura del sistema
+.DS_Store
+Thumbs.db
+
+#Dependencias gigantes
+node_modules/
+
+#Archivos de documentos
+*.pdf
+*.doc
+*.docx
+*.pptx
+*.txt
+
+#Archivos de build de React Native
+.expo/
+dist/
+web-build/
